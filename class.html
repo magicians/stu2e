@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <meta name="description" content="Student to engineer, startup, bjut">
+    <meta name="author" content="Jobs Long">
+    <link rel="icon" href="favicon.ico">
+    <title>Stu2e.com</title>
+
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/v4-dev/dist/css/bootstrap.css">
+    <!-- Custom Style -->
+    <link href="css/cover.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <!-- Header -->
+          <div class="masthead clearfix">
+            <div class="inner">
+              <h3 class="masthead-brand">STU<span style="color:#F44336;">2</span>E</h3>
+              <nav class="nav nav-masthead">
+                <a class="nav-link active" href="index.html"> <img src="images/books.png"> 课程</a>
+                <a class="nav-link" href="lecture.html"> <img src="images/e-learning.png"> 演讲</a>
+                <a class="nav-link" href="project.html"> <img src="images/code.png"> 项目</a>
+                <a class="nav-link" href="#"> <img src="images/note.png"> 报名</a>
+                <a class="nav-link" href="#"> <img src="images/question.png"> 问卷调查</a>
+                <a class="nav-link" href="about.html"><img src="images/spy.png"></a>
+              </nav>
+            </div>
+          </div>
+
+          <!-- Cover -->
+          <div class="inner cover" style="width:940px;text-align:left">
+            <!-- <div class="jumbotron">
+              <h1 class="display-3">Hello, world!</h1>
+              <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+            </div> -->
+
+            <div class="list-group">
+
+              <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+                <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                  <h4 class="list-group-item-heading"><span style="color:#F44336;">1.</span> 课程概述</h4>
+                  <p class="list-group-item-text">课程资料使用 Standford 大学的技术创业课程结构，并结合国内最新的一些技术和创业趋势。</p>
+                </div>
+                <div class="col-sm-1">
+                  <a class="btn btn-lg" href="#">
+                    <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                    <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                  </a>
+                </div>
+                <div class="col-sm-1">
+                  <a class="btn btn-lg" href="#">
+                    <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                    <br >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                  </a>
+                </div>
+                <div class="col-sm-1">
+                  <a class="btn btn-lg" href="#">
+                    <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                    <br >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                  </a>
+                </div>
+                <div class="col-sm-1">
+                  <a class="btn btn-lg" href="#">
+                    <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                    <br >
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                  </a>
+                </div>
+              </div>
+            
+              <hr >
+
+             <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+               <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                 <h4 class="list-group-item-heading"><span style="color:#F44336;">2.</span> 引导式的开始</h4>
+                 <p class="list-group-item-text">搭建基本的开发环境并部署一个简单地界面到生产环境</p>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                   <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+             </div>
+
+             <hr >
+
+             <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+               <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                 <h4 class="list-group-item-heading"><span style="color:#F44336;">3.</span> Linux & 服务器端的 Javascript</h4>
+                 <p class="list-group-item-text">熟悉 Linux 以及 Javascript 的历史，编写第一个 node 程序</p>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                   <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+             </div>
+
+             <hr >
+
+             <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+               <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                 <h4 class="list-group-item-heading"><span style="color:#F44336;">4.</span> 命令行和开发者环境</h4>
+                 <p class="list-group-item-text">熟悉一些你的工作台和一些不错的工具</p>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                   <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+             </div>
+
+             <hr >
+
+             <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+               <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                 <h4 class="list-group-item-heading"><span style="color:#F44336;">5.</span> 市场调查、原型图以及设计</h4>
+                 <p class="list-group-item-text">如何将一个想法打造成商业模式</p>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                   <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+             </div>
+
+             <hr >
+
+             <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+               <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                 <h4 class="list-group-item-heading"><span style="color:#F44336;">6.</span> 关于 HTML/CSS/JS 的简短介绍</h4>
+                 <p class="list-group-item-text">我们一起来做一个 HTML5 APP 吧</p>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                   <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+             </div>
+
+             <hr >
+
+             <div class="row" class="list-group-item" style="margin:10px 10px 0 10px;">
+               <div class="col-sm-8 col-xs-12" style="margin-top:10px;">
+                 <h4 class="list-group-item-heading"><span style="color:#F44336;">7.</span> 产品部署、DNS 以及域名</h4>
+                 <p class="list-group-item-text">产品部署到生产环境需要注意的事情，以及选择一个好域名，获取更多的潜在用户</p>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-file" aria-hidden="true"></span> 
+                   <br ><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABiElEQVRYR+2W203DQBBFTzqgA6ADUgHQASVABZAKgA6gA0qgA6ACoALSAXQAOtJeZPxA2LItPjxSlGQ22Tl757Fe0bRH4LDF/1fXLXAB3JT3X/+3mgBgH9gBnoFNAemEGBvgFTgoQc+BD+AYeOkiGBvgGrgqEPfAbgm+ngvAOObfOjANwqhE6qLBMbYCCWAhnwFb4AhQjRNA/w+bCsAg5l8Foka6Qv+3TQmQIJ5eNQxsWmYHiBpCCDNbCtoKv1GMc6SgCvJUinLWGhgMkKGSDfaAu3JPON2qLeXaKXBZflxf1/0J9FIgALaPE80i0t7LeBXA11tpNcetbSdEAPxuYM3PgwByO+ZisY0yVLK5Pi+hOmDWo+IgAMkzVn33xDlhNUB8KuE4FtwpGHsYqkA28NTK623XBuCFY3Chsi5AIAUapEDbA0odIBsL53NAG6AHGR3A9HhqJ5zpUeYuhXoD2HK+7AI3rZo5rj5kuK7PdtSyXr/9eilQiznK1wVgUWBRYFFgUeD/KfAFAJmVIXHkLzAAAAAASUVORK5CYII="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAACTUlEQVRYR8WW4VHDMAyFXyeADWAD2AA2gA1gA7oBxwZlAmAD2IBOAExA2aDdgPtyVk9xZCdpU/Bdrj+aWJ/kpyfP9M9rNkH8i7THcpe9dgW4knSdnmMX+F3SpyR+vySt+qDGAJxLuklBT/s2Tv8DYFBUCLjW6gMgENneSgJgigXQFioCoKQW9HKKiJU9Pj2AnSvZ/tVaAjCXdC/Ji+nQAG+SXnkAWEs6OnRESdugKWYTEgDaiSpYP0/JQisuUrYk2lm5CIFBeDxnO5IQ9DkFzX3A2pjjphNeam3IS4AY1EkFqBa0ZFpstzIA+v0unQ1kka3yjgHhCWSHsVDiPNNaUJ9HU4GnZDT+D87LDCN0sKAaQJEEFat1VKtaAEBfK29TqgzIMka4NhNq9vyTNIE2WnYMAB/SBfsIL5JHMah/ORfhGOFFQTepAzqZplniu4BKPA4ZRr4TIsMiaONq6fFgfRN0DYANH86SZV3QGZ0pC/MJhBoFHTpBAZ8D8FEYtSXhRaUfE7RVLQDIdIjrAcTHVMhslRL33RVqR9TMgn2FVzLIcPikrrPWbgDy5R2P8x4zKUtBo0sOVXzo6wLgKLMJD4vNF05pw8dPPC9uE3j+7caMCAvlLHMLjm61BmMi9e8MCWoQVGsBwLc7l5zQC49Mw5me7pDRNT3fr3M/AABlR6WNxEXH8D4gZIteRg2ffFM/jvscr3Id6PxVux+0Xi6JsE94teET3Q+K8EO6gI9NeJTbm9agiVcr3VAAvwdnT4XQQTQvxhxVaESjNtj35V+a1aeuSXHS6QAAAABJRU5ErkJggg=="/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-film" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAA/ElEQVRYR+2X0Q3CMAwFrxPAJsAGMAl0AhiFDYBJYIR2EzYAPaRIVaFQJy5BqPmskvhsP9dOQeZVZLbPCNCOwAbYAvOBUlMBe+AU7g8AU+A8oOG2PwJZAdcAoA+zgbzuulY2FwJQ2A9fNh7MlQKwel86AlcCuBm91xmJ9AJMjGeftscC6CIJVxBJ2kkBCN4cgXVsJDwAZDtayF4AgojShSdAlC68Acy6+DsAc0/xjIBEqIYmiN7LCyBrGWb7EZnz/SovsSmIyncXQM52XP/EQKLIWKPQu8zebKzVP5pDaXJvN1DJ+LI5lIazqudd6pDxwWuN5SrdxxpfRmME7iAINHKzlmI7AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+               <div class="col-sm-1">
+                 <a class="btn btn-lg" href="#">
+                   <span class="glyphicon glyphicon-tasks" aria-hidden="true"></span> 
+                   <br >
+                   <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+                 </a>
+               </div>
+             </div>
+
+             <hr >
+
+          <!--    <div class="row" class="list-group-item" style="margin:10px 10px 0 10px
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAw0lEQVRYR2NkGGDAOMD2M4AccIGBgUF/gBxyAeSA/wNkOdhaWjmgkYGBoYGAx8AeH3UArUJgAQMDAwjjAwdoGQVEp2tQCIASiwPROqir8MCgKIio6ycSTQOFwITRkpDEUENW7kiB3v3UyIaUJGKqFMUD7gBKyo/BUxKCsqEBBYmJEq3gBsmAgkHhAFBlZD9AwQCujIZlmxBXgBZCW+EgeaqUhKTGHKjoBud/WMjTOwpGHYARZQPdNbs4KAoiUlMyVdUDAOYyL8yQV7Q/AAAAAElFTkSuQmCC"/>
+             </div> -->
+
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="mastfoot">
+            <p>Power by <a href="http://ideas.top">Ideas.Top</a>, Design by <a href="http://jobslong.com">@JobsLong</a>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

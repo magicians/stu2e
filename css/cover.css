@@ -104,6 +104,9 @@ body {
 .cover {
   padding: 0 1.5rem;
 }
+.cover-heading {
+  color: #F44336;
+}
 .cover .btn-lg {
   padding: .75rem 1.25rem;
 }
@@ -133,6 +136,7 @@ body {
   .site-wrapper-inner {
     vertical-align: middle;
   }
+  
   /* Handle the widths */
   .masthead,
   .mastfoot,
