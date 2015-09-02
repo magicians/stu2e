@@ -17,6 +17,9 @@
 Peter Thiel CS183 http://blakemasters.com/peter-thiels-cs183-startup
 
 课程的目的构建学术的计算机科学与软件工程之间的桥梁，快节奏的介绍一些关键的技术和工具（command line, dotfiles, text editor, distributed version control, debugging, testing, documentation、reading code【code review】、deployment），包括一些知名科技创业公司的以及大型学术项目的高级工程师的 presentation。课程结束之后，学生将会创建一个命令行应用程序，并把它公开为一个 Web 服务，然后和其他学生的应用程序和服务连接起来共同构建一个 HTML5 的移动 APP。一般来说需要使用 modern javascript 和最新的 web 技术，包括 Node， Backone， coffeescript、Bootstrap、Git、GitHub。
+
+http://dailyjs.com/
+http://eloquentjavascript.net/
 ```
 * 关于我们(简短的介绍)
 	* JobsLong（小文）
