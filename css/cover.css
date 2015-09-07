@@ -105,10 +105,12 @@ body {
   padding: 0 1.5rem;
 }
 .cover-heading {
-  color: #F44336;
+  margin: 48px 20px;
+  font-size: 24px;
+  color: #ED4634;
 }
 .cover .btn-lg {
-  padding: .75rem 1.25rem;
+  padding: .45rem 1.25rem;
 }
 
 /*
